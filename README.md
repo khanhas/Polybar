@@ -1,0 +1,2 @@
+# Polybar
+A bar

@@ -8,7 +8,15 @@ Inspired by famous Polybar from Linux community, I created a playground for anyo
 - **Workspace Manager *(Windows 10's Virtual Desktop)*:** Change, create new workspace and move windows to workspace.  
 - **Music Controller:** Support Spotify, Google Play Music, Youtube, SoundCloud, Twitch, Foobar, AIMP, iTunes, MusicBee and many more.  
 - **Discord Status:** notify unread DMs, unread guilds, guild mentions, voice chat status, microphone and headphone toggles.  
+- **App Launcher:** search and launch app in speed of light.
 - **Power Plan Switcher:** Change power plan, adjust brightness and turn off monitor.  
 - **Calendar View:** An calendar synching with Google Calendar and Microsoft Outlook service.  
 - Clean GUI for customizing.  
 - Create new theme with no sweat.  
+
+# Screenshots
+![setup1](http://i.imgur.com/gaoJnCp.png)  
+![setup2](http://i.imgur.com/pFdEBgb.png)  
+![setup3](http://i.imgur.com/qnZrbiL.png)  
+![setup4](http://i.imgur.com/khlmpNh.png)  
+![setup5](http://i.imgur.com/X2cpsfe.png)

@@ -1,2 +1,2 @@
-![Title](https://github.com/khanhas/Polybar/blob/master/polybarTitle.png)
+![Title](https://github.com/khanhas/Polybar/blob/master/titleImage.png)
 A bar

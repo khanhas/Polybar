@@ -17,5 +17,5 @@ Font_Size=12
 Shadow=1
 Translucent=0
 
-DefaultAddedModules=volume,weather,discord,power,tray,startmenu,date,time,music,wifi
+DefaultAddedModules=volume,discord,power,tray,startmenu,date,time,wifi,mail,workspacemanager,taskbar
 

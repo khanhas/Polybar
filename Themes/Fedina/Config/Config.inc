@@ -1,6 +1,6 @@
 [Variables]
-Bar_Opacity=db
-Bar_Width =1840
+Bar_Opacity=e0
+Bar_Width =1920
 Bar_Height =50
 Bar_OffsetX =0
 Bar_OffsetY =0

@@ -1,0 +1,7 @@
+obs studio (32bit);1
+control panel;1
+sublime text 3;1
+frameless for netflix;1
+notepad;1
+google chrome;5
+frameless for spotify;1

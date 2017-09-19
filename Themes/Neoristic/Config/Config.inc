@@ -20,5 +20,5 @@ Font_Size=9
 
 Shadow=0
 Translucent=0
-DefaultAddedModules=startmenu,workspacemanager,tray,music,time,date,volume,taskbar,weather
+DefaultAddedModules=startmenu,workspacemanager,tray,music,time,date,volume,taskbar,weather,mail
 

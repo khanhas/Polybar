@@ -3,11 +3,16 @@ function Initialize()
 	dotGap = SKIN:ParseFormula('('..SKIN:GetVariable('Workspace_Number_Gap')..')')
 	SKIN:Bang('!CommandMeasure GetWorkspaceVariable "Run"')
 end
-oldCurrentWorkspace = 1
+oldCurrentWorkspace = -1
 changingWorkspace = false
 function Update()
 	totalWorkspace = tonumber(SKIN:GetVariable('Workspace_Total',-1))
 	currentWorkspace = tonumber(SKIN:GetVariable('Workspace_Current',-1))
+	if not totalWorkspace or not currentWorkspace then
+		SKIN:Bang('!HideMeterGroup', 'WorkspaceManager_All')
+		SKIN:Bang('!ShowMeter', 'WorkspaceError')
+		return
+	end
 	for i = 1, maximumWorkspace do
 		SKIN:Bang('!ShowMeter', 'Workspace'..i)
 		if i <= totalWorkspace then

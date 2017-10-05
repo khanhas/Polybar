@@ -2,10 +2,10 @@ function Initialize()
 	dofile(SKIN:GetVariable('@')..'Scripts\\AppLauncher_Common_Script.lua')
 
 	sideGap = 30
-	topGap = 85
+	topGap = 75
 
-	appXGap = 105
-	appYGap = 115
+	appXGap = 120
+	appYGap = 125
 
 	appColumn = 4
 	appRow = 2
@@ -29,16 +29,16 @@ Para:
 ]]
 function DrawPageIndicator(shapeIndex, posX, isCurrentPage)
 	if isCurrentPage then
-		SKIN:Bang('!SetOption', 'PageShape', 'Shape'..shapeIndex, 'Rectangle '..posX..',0,5,5 | Extend Selected | Offset -2.5,-2.5')
+		SKIN:Bang('!SetOption', 'PageShape', 'Shape'..shapeIndex, 'Ellipse '..posX..',0,3 | Extend Selected ')
 	else
-		SKIN:Bang('!SetOption', 'PageShape', 'Shape'..shapeIndex, 'Rectangle '..posX..',0,4,4 | Extend Normal | Offset -2,-2')
+		SKIN:Bang('!SetOption', 'PageShape', 'Shape'..shapeIndex, 'Ellipse '..posX..',0,2 | Extend Normal')
 	end
 end
 
 function DrawSelectingShape(X, Y)
-	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape2', 'Rectangle ' .. X .. ',' .. Y .. ',100,100 | Extend Selecting')
+	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape3', 'Rectangle ' .. X .. ',' .. Y .. ',110,120 | Extend Selecting')
 end
 
 function ClearSelectingShape()
-	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape2', 'Rectangle 0,0,0,0 | StrokeWidth 0')
+	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape3', 'Rectangle 0,0,0,0 | StrokeWidth 0')
 end

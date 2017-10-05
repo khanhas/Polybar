@@ -2,13 +2,15 @@ function Initialize()
 	dofile(SKIN:GetVariable('@')..'Scripts\\AppLauncher_Common_Script.lua')
 
 	sideGap = 30
-	topGap = 75 
+	topGap = 75
 
 	appXGap = 105
 	appYGap = 110
 
 	appColumn = 5
 	appRow = 3
+
+	dotZoneMaxWidth = SKIN:GetVariable('Width') - sideGap * 8
 
 	GetEssentialVariables()
 end
@@ -31,4 +33,12 @@ function DrawPageIndicator(shapeIndex, posX, isCurrentPage)
 	else
 		SKIN:Bang('!SetOption', 'PageShape', 'Shape'..shapeIndex, 'Ellipse '..posX..',0,2 | Extend Normal')
 	end
+end
+
+function DrawSelectingShape(X, Y)
+	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape4', 'Rectangle ' .. X .. ',' .. Y .. ',100,100 | Extend Selecting')
+end
+
+function ClearSelectingShape()
+	SKIN:Bang('!SetOption', 'METER_BACKGROUND', 'Shape4', 'Rectangle 0,0,0,0 | StrokeWidth 0')
 end

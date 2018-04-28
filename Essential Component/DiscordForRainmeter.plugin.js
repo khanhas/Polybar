@@ -142,7 +142,7 @@ DiscordForRainmeter.prototype.countAgain = function() {
 	saveValue("Voice_Channel", voiceChannel)
 
 //MICROPHONE AND HEADPHONE STATUS
-	toggleButton = document.getElementsByClassName("iconButtonDefault-3QZh-A iconButton-3mKjyp button-1aU9q1 small-1ChI_f")
+	toggleButton = document.getElementsByClassName("iconButtonDefault-2cKx7- iconButton-3V4WS5 button-2b6hmh small--aHOfS")
 
 	microphoneButton = toggleButton[0].getAttribute("style")
 	if (microphoneButton == unmutedIcon)
@@ -159,14 +159,14 @@ DiscordForRainmeter.prototype.countAgain = function() {
 	saveValue("Headphone", headphoneButton)
 
 //SPEAKING STATUS
-	userAvaLink = document.getElementsByClassName("container-iksrDt")[0].firstChild.getAttribute("style")
-	talkingList = document.getElementsByClassName("draggable-3SphXU")
+	userAvaLink = document.getElementsByClassName("container-2Thooq")[0].firstChild.getAttribute("style")
+	talkingList = document.getElementsByClassName("draggable-1KoBzC")
 	for (i = 0; i < talkingList.length; i++)
 	{
 		checkingAva = talkingList[i].firstChild.firstChild.firstChild
 		if (checkingAva.getAttribute("style") == userAvaLink)
 		{
-			if (checkingAva.className == "avatarSpeaking-3teDH6")
+			if (checkingAva.className == "avatarSpeaking-1wJCNq")
 				saveValue("Speaking", 1)
 			else
 				saveValue("Speaking", 0)
@@ -177,18 +177,18 @@ DiscordForRainmeter.prototype.countAgain = function() {
 
 //KEYBIND COMBINATION
 //(Only return current combinations when user open "Keybind" in Setting menu. If Keybind setting is not visible, it will just skip but old values are still saved)
-	keybindList = document.getElementsByClassName("keybindGroup-37VaRm")
+	keybindList = document.getElementsByClassName("keybindGroup-JQs9x_")
 	if (keybindList.length > 0) {
 		for (i = 0; i < keybindList.length; i++){
 			selectedValue = keybindList[i].getElementsByClassName("Select-value-label")[0].innerHTML
 
 			if (selectedValue == "Toggle Mute") {
 
-				hotkey = keybindList[i].getElementsByClassName("input-2ZbpUR")[0].getAttribute("value")
+				hotkey = keybindList[i].getElementsByClassName("input-1G2o7i")[0].getAttribute("value")
 				saveValue("Toggle_Mute_Keybind", hotkey)
 			}
 			else if (selectedValue == "Toggle Deafen") {
-				hotkey = keybindList[i].getElementsByClassName("input-2ZbpUR")[0].getAttribute("value")
+				hotkey = keybindList[i].getElementsByClassName("input-1G2o7i")[0].getAttribute("value")
 				saveValue("Toggle_Deaf_Keybind", hotkey)
 			}
 		}
@@ -222,7 +222,7 @@ DiscordForRainmeter.prototype.getDescription = function () {
 };
 
 DiscordForRainmeter.prototype.getVersion = function () {
-	return "1.1";
+	return "1.2";
 };
 
 DiscordForRainmeter.prototype.getAuthor = function () {

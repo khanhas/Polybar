@@ -1,5 +1,5 @@
 ![Title](https://github.com/khanhas/Polybar/blob/master/titleImage.png)  
-***for Rainmeter***  
+***for [Rainmeter](https://www.rainmeter.net/)***  
   
 Inspired by famous Polybar from Linux community, I created a playground for anyone with desire finding for a windows taskbar replacement and enhancing everyday workflow. This skin contain many themes which have totally unique looks and design. In each theme contains many modules and some of them have never-seen before functionality. Explore them yourself and help me expand more.
 
